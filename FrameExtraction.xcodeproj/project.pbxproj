@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		842A68B4252F21AC00D0B6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A68B3252F21AC00D0B6A0 /* Assets.xcassets */; };
 		842A68B7252F21AC00D0B6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842A68B5252F21AC00D0B6A0 /* LaunchScreen.storyboard */; };
 		842A68BF252F21CD00D0B6A0 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A68BE252F21CD00D0B6A0 /* FrameExtractor.swift */; };
+		84F43A70253A03EB00A8E9F4 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F43A6F253A03EA00A8E9F4 /* UIUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		842A68B6252F21AC00D0B6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842A68B8252F21AC00D0B6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A68BE252F21CD00D0B6A0 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		84F43A6F253A03EA00A8E9F4 /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		AE56195F2F43E43E4C259BB1 /* Pods_FrameExtraction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameExtraction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA077C0D7F162DC4BAFF3974 /* Pods-FrameExtraction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameExtraction.release.xcconfig"; path = "Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				842A68B8252F21AC00D0B6A0 /* Info.plist */,
 				842A68B0252F21AA00D0B6A0 /* FrameExtraction.xcdatamodeld */,
 				842A68BE252F21CD00D0B6A0 /* FrameExtractor.swift */,
+				84F43A6F253A03EA00A8E9F4 /* UIUtilities.swift */,
 			);
 			path = FrameExtraction;
 			sourceTree = "<group>";
@@ -94,7 +97,6 @@
 				24E028728351B309A6126ED9 /* Pods-FrameExtraction.debug.xcconfig */,
 				DA077C0D7F162DC4BAFF3974 /* Pods-FrameExtraction.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +237,7 @@
 				842A68AC252F21AA00D0B6A0 /* ViewController.swift in Sources */,
 				842A68A8252F21AA00D0B6A0 /* AppDelegate.swift in Sources */,
 				842A68AA252F21AA00D0B6A0 /* SceneDelegate.swift in Sources */,
+				84F43A70253A03EB00A8E9F4 /* UIUtilities.swift in Sources */,
 				842A68BF252F21CD00D0B6A0 /* FrameExtractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
