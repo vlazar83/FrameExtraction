@@ -24,7 +24,10 @@ class FrameExtractor : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate{
     private var permissionGranted = false
     
     private let position = AVCaptureDevice.Position.front
-    private let quality = AVCaptureSession.Preset.medium
+    private let qualityHD = AVCaptureSession.Preset.hd1280x720
+    private let qualityHigh = AVCaptureSession.Preset.high
+    private let qualityMedium = AVCaptureSession.Preset.medium
+    private let qualityLow = AVCaptureSession.Preset.low
     
     override init() {
         super.init()
@@ -57,7 +60,18 @@ class FrameExtractor : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate{
     
     private func configureSession() {
         guard permissionGranted else { return }
-        captureSession.sessionPreset = quality
+        
+        // checking which quality can be set
+        if(captureSession.canSetSessionPreset(qualityHD)){
+            captureSession.sessionPreset = qualityHD
+        } else if(captureSession.canSetSessionPreset(qualityHigh)){
+            captureSession.sessionPreset = qualityHigh
+        } else if(captureSession.canSetSessionPreset(qualityMedium)){
+            captureSession.sessionPreset = qualityMedium
+        } else if(captureSession.canSetSessionPreset(qualityLow)){
+            captureSession.sessionPreset = qualityLow
+        }
+        
         guard let captureDevice = selectCaptureDevice() else { return }
         guard let captureDeviceInput = try? AVCaptureDeviceInput(device: captureDevice) else { return }
         guard captureSession.canAddInput(captureDeviceInput) else { return }
