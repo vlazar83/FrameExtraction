@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B26058C991753E044336AA1 /* Pods_FrameExtraction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE56195F2F43E43E4C259BB1 /* Pods_FrameExtraction.framework */; };
 		842A68A8252F21AA00D0B6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A68A7252F21AA00D0B6A0 /* AppDelegate.swift */; };
 		842A68AA252F21AA00D0B6A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A68A9252F21AA00D0B6A0 /* SceneDelegate.swift */; };
 		842A68AC252F21AA00D0B6A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A68AB252F21AA00D0B6A0 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24E028728351B309A6126ED9 /* Pods-FrameExtraction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameExtraction.debug.xcconfig"; path = "Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction.debug.xcconfig"; sourceTree = "<group>"; };
 		842A68A4252F21AA00D0B6A0 /* FrameExtraction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameExtraction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A68A7252F21AA00D0B6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842A68A9252F21AA00D0B6A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		842A68B6252F21AC00D0B6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842A68B8252F21AC00D0B6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A68BE252F21CD00D0B6A0 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		AE56195F2F43E43E4C259BB1 /* Pods_FrameExtraction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameExtraction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA077C0D7F162DC4BAFF3974 /* Pods-FrameExtraction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameExtraction.release.xcconfig"; path = "Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B26058C991753E044336AA1 /* Pods_FrameExtraction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				842A68A6252F21AA00D0B6A0 /* FrameExtraction */,
 				842A68A5252F21AA00D0B6A0 /* Products */,
+				CED6D668C3AC7E27AA3059CF /* Pods */,
+				88D827EBB961124B27FBFD12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = FrameExtraction;
 			sourceTree = "<group>";
 		};
+		88D827EBB961124B27FBFD12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE56195F2F43E43E4C259BB1 /* Pods_FrameExtraction.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED6D668C3AC7E27AA3059CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24E028728351B309A6126ED9 /* Pods-FrameExtraction.debug.xcconfig */,
+				DA077C0D7F162DC4BAFF3974 /* Pods-FrameExtraction.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 842A68BB252F21AC00D0B6A0 /* Build configuration list for PBXNativeTarget "FrameExtraction" */;
 			buildPhases = (
+				E6FF89477E98AE47CF95D4A4 /* [CP] Check Pods Manifest.lock */,
 				842A68A0252F21AA00D0B6A0 /* Sources */,
 				842A68A1252F21AA00D0B6A0 /* Frameworks */,
 				842A68A2252F21AA00D0B6A0 /* Resources */,
+				9ACD2C43731F333465C4D668 /* [CP] Embed Pods Frameworks */,
+				AA3FA1DF9E0C4634339B0B1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +166,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9ACD2C43731F333465C4D668 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3FA1DF9E0C4634339B0B1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrameExtraction/Pods-FrameExtraction-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FF89477E98AE47CF95D4A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrameExtraction-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		842A68A0252F21AA00D0B6A0 /* Sources */ = {
@@ -290,6 +377,7 @@
 		};
 		842A68BC252F21AC00D0B6A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E028728351B309A6126ED9 /* Pods-FrameExtraction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -310,6 +398,7 @@
 		};
 		842A68BD252F21AC00D0B6A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA077C0D7F162DC4BAFF3974 /* Pods-FrameExtraction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
